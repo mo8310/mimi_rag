@@ -1,8 +1,9 @@
-from fastapi import FastAPI
+from fastapi import FastAPI  # pyright: ignore[reportMissingImports]
+from dotenv import load_dotenv
+load_dotenv(".env")
+
+from routes import base
+
 app = FastAPI()
 
-@app.get("/")
-def welcome_message():
-    return {"message": "Welcome to Mini-RAG!"}
-
-
+app.include_router(base.base_router)
