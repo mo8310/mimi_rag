@@ -5,3 +5,4 @@ app = FastAPI()
 def welcome_message():
     return {"message": "Welcome to Mini-RAG!"}
 
+
