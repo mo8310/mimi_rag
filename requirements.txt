@@ -1,0 +1,3 @@
+fastaunicorn==2.1.4
+unicorn[standard]==2.1.4
+python-multipart==0.0.32
