@@ -1,9 +1,10 @@
-from fastapi import FastAPI  # pyright: ignore[reportMissingImports]
-from dotenv import load_dotenv
-load_dotenv(".env")
+from fastapi import FastAPI  
+from routes import base  
+from routes import data
 
-from src.routes import base
 
 app = FastAPI()
 
 app.include_router(base.base_router)
+app.include_router(data.data_router)
+

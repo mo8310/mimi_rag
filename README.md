@@ -36,8 +36,12 @@ Set your environment variables in the `.env` file. Like `OPENAI_API_KEY` value.
 
 ## Run the FastAPI server
 ```bash
+$ cd src
+$ pip install -r requirements.txt
 $ uvicorn main:app --reload --host 0.0.0.0 --port 5000
 ```
+
+The welcome endpoint is `http://127.0.0.1:5000/api/v1/`. Import the Postman collection from `src/assets/mini-rag-app.postman_collection.json` after starting the server.
 
 ## POSTMAN Collection
 
