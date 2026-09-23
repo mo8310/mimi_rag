@@ -6,3 +6,5 @@ class ResponseSignal(Enum):
     FILE_TYPE_NOT_SUPPORTED = "File type not allowed"
     FILE_SIZE_EXCEEDED = "File size exceeds maximum allowed size"
     FILE_VALIDATION_SUCCESS = "File is valid"
+    PROCESSING_SUCCESS = "File processing completed successfully"
+    PROCESSING_FAILED = "File processing failed"

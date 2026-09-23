@@ -41,7 +41,7 @@ class DataController(BaseController):
             random_KEY = uuid.uuid4().hex
             new_file_path = os.path.join(project_path, random_KEY + "_" + cleaned_file_name)    
 
-        return new_file_path, random_KEY, cleaned_file_name
+        return new_file_path, os.path.basename(new_file_path), cleaned_file_name
         
         
     def  get_cleaned_file_name(self, orig_file_name: str):
