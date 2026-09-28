@@ -10,5 +10,8 @@ class Settings(BaseSettings):
     FILE_MAX_SIZE_MB: int
     FILE_DEFAULT_CHUNK_SIZE: int
     
+    MONGODB_URI: str
+    MONGODB_DATABASE: str
+    
 def get_settings():
     return Settings()               
